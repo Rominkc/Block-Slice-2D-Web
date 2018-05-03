@@ -1,0 +1,13 @@
+{
+"companyName": "GrovelandInc",
+"productName": "Block Slice 2D",
+"dataUrl": "Block Slice 2D Web.data.unityweb",
+"asmCodeUrl": "Block Slice 2D Web.asm.code.unityweb",
+"asmMemoryUrl": "Block Slice 2D Web.asm.memory.unityweb",
+"asmFrameworkUrl": "Block Slice 2D Web.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}

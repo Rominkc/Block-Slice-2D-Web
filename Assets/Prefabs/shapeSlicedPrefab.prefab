@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4954741289258988}
   - component: {fileID: 212594629161094048}
   - component: {fileID: 114657468250067570}
+  - component: {fileID: 82816048979004650}
   m_Layer: 0
   m_Name: shapeSlicedPrefab
   m_TagString: Untagged
@@ -41,6 +42,87 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &82816048979004650
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1974153790670928}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 9763895306705c844b3efd065550a57c,
+    type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!114 &114657468250067570
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52,9 +134,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83f3f07b4679ee9418d1f55f96fe8b96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squarePrefab: {fileID: 1371494809493244, guid: 8f10fc08407573d4ab90d4e6e82557d6,
-    type: 2}
   shapeSlicedPrefab: {fileID: 1974153790670928}
+  sliceClip: {fileID: 8300000, guid: 5d01e118ae6bf3c48b5e6bce71d0fa36, type: 3}
+  loseLifeClip: {fileID: 8300000, guid: 77907e1439673024a9fb19edda8f6590, type: 3}
   brokenBlocks:
   - {fileID: 21300012, guid: 1656d27f89d1e1a49b9313ca98b511cc, type: 3}
   - {fileID: 21300036, guid: 1656d27f89d1e1a49b9313ca98b511cc, type: 3}
@@ -74,6 +156,7 @@ MonoBehaviour:
   - {fileID: 21300372, guid: 1656d27f89d1e1a49b9313ca98b511cc, type: 3}
   - {fileID: 21300396, guid: 1656d27f89d1e1a49b9313ca98b511cc, type: 3}
   - {fileID: 21300420, guid: 1656d27f89d1e1a49b9313ca98b511cc, type: 3}
+  color: 14
 --- !u!212 &212594629161094048
 SpriteRenderer:
   m_ObjectHideFlags: 1

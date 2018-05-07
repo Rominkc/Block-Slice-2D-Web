@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 public class ColorPicker : MonoBehaviour {
+    public AudioSource dingSound; // sound to play everytime a new color is picked
     public GameObject color; // the square prefab so you can get the color hit from it
     public static int rightColor;// Going to be used to calculate if player gets score added or loses a life
     public Text colorText;
-    float minDelay = 2f;
-    float maxDelay = 15f;
+    float minDelay = 1f;
+    float maxDelay = 3f;
     // Update is called once per frame
     void Start()
     {
@@ -30,7 +32,7 @@ public class ColorPicker : MonoBehaviour {
             yield return new WaitForSeconds(delay);
           
             colorText.text = chosenColor(pickAColorIDX()); // set the text to the color, and pick color
-
+            dingSound.Play();
 
         }
 

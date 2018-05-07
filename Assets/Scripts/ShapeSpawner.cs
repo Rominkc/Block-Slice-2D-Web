@@ -8,8 +8,8 @@ public class ShapeSpawner : MonoBehaviour
 
     public GameObject shapePrefab;
     public Transform[] spawnPoints;
-    float minDelay = 1f;
-    float maxDelay = 2f;
+    public float minDelay;
+    public float maxDelay;
     float deleteDelay = 2f;
   
     // Use this for initialization
@@ -34,7 +34,7 @@ public class ShapeSpawner : MonoBehaviour
             if (clone != null)
             {
                 
-                yield return new WaitForSeconds(delay);
+                yield return new WaitForSeconds(deleteDelay);
                 // Check again if object was destroyed after a delay, and if not destroyed delete after delay
                 if (clone != null)
                 {
